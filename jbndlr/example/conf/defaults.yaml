@@ -1,0 +1,17 @@
+Service:
+  Version: 0.0.1
+  Name: Example
+API:
+  ESIDPort: 7000
+  RESTPort: 8000
+  GRPCPort: 9000
+  LimitMaxConcurrentRequests: 20
+  LimitMaxWindowRequests: 20
+  LimitWindowSeconds: 1
+  HTTPReadTimeout: 5
+  HTTPWriteTimeout: 10
+  GracefulSeconds: 5
+Auth:
+  JWTKey: "not_so_secret_key"
+  ExpireAfter: 300
+  RenewWindow: 30

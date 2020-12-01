@@ -1,0 +1,19 @@
+{
+  "image": "jbndlr/dev-go:0.0.2",
+  "workspaceMount": "source=${localWorkspaceFolder}/jbndlr,target=/root/go/src/jbndlr,type=bind,consistency=delegated",
+  "workspaceFolder": "/root/go/src/jbndlr",
+  "remoteEnv": {
+    "GOPATH": "/root/go",
+    "PATH": "${containerEnv:PATH}:/root/go/bin"
+  },
+  "appPort": [
+    "7000:7000",
+    "8000:8000",
+    "9000:9000"
+  ],
+  "extensions": [
+    "ms-vscode.go",
+    "golang.go",
+    "zxh404.vscode-proto3"
+  ]
+}

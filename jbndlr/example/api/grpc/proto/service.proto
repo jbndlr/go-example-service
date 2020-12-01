@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "jbndlr/example/api/grpc/pb";
+
+package grpc;
+import "messages.proto";
+
+service Example {
+    rpc Info(Empty) returns (InfoMessage) {};
+}

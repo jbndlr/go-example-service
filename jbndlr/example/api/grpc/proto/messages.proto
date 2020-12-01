@@ -1,0 +1,13 @@
+syntax = "proto3";
+option go_package = "jbndlr/example/api/grpc/pb";
+
+package grpc;
+
+message Empty {}
+
+message InfoMessage {
+    string service = 1;
+    string version = 2;
+    int32  httpPort = 3;
+    int32  grpcPort = 4;
+}
