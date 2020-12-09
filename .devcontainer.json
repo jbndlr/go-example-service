@@ -1,5 +1,5 @@
 {
-  "image": "jbndlr/dev-go:0.0.4",
+  "image": "jbndlr/go-example-service:0.0.1-dev",
   "workspaceMount": "source=${localWorkspaceFolder}/jbndlr,target=/root/go/src/jbndlr,type=bind,consistency=delegated",
   "workspaceFolder": "/root/go/src/jbndlr",
   "remoteEnv": {

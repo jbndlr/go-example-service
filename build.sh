@@ -14,7 +14,7 @@ build_dist() {
     docker build $DIR \
         --force-rm \
         --file dist.Dockerfile \
-        --tag jbndlr/go-exapmle-service:$VERSION
+        --tag jbndlr/go-example-service:$VERSION
 }
 
 case "$TARGET" in
