@@ -1,4 +1,4 @@
-FROM jbndlr/dev-go:0.0.4
+FROM jbndlr/dev-go:0.1.0
 
 RUN go get -u -v \
     gopkg.in/yaml.v2 \
